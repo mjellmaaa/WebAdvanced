@@ -1,0 +1,35 @@
+/*p{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-right: 100px;
+    margin-left: 100px;
+}*/
+
+/*p{
+    margin: 100px 120px 150px 200px;
+}*/
+
+/*p{
+    margin: 25px 50px 75px;
+}*/
+
+/*p{
+    margin: 20px;
+}*/
+
+p{
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-bottom: 30px;
+    padding-left: 40px;
+
+    width: 300px;
+    border: 15px solid green;
+    margin: 20px;
+    background-color: lightgray;
+    color: #FF0000;
+}
+
+body{
+    background-color: rgb(185, 101, 164);
+}
