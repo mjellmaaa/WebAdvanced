@@ -1,6 +1,6 @@
 body{
     margin: 0;
-    font-family: Helvetica, sans-serif;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
 
 #section-1{
@@ -37,13 +37,13 @@ nav ul li.active{
 }
 
 .main-heading{
-    margin-top: 148px;
+    margin-top: 130x;
     text-align: center;
 }
 
 .main-heading h1{
     color: black;
-    font-size: 42px;
+    font-size: 60px;
     font-weight: bold;
     margin-bottom:60px;
 }
@@ -106,4 +106,25 @@ nav ul li.active{
 .service p{
     font-size: 16px;
     line-height: 26px;
+}
+
+.service img{
+    height: auto;
+    width: 60px;
+}
+
+#section-3{
+    background-color: #1f1f1f;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+}
+
+#section-3 p{
+    margin-left: 20px;
+    margin-right: 20px;
 }
