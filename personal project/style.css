@@ -27,11 +27,12 @@ nav ul li{
 
 nav ul li a{
     text-decoration: none;
-    color: white;
+    color: black;
+
 }
 
-nav ul li.active{
-    background-color: #000000;
+nav ul li:hover{
+    background-color: #929292;
     border-radius: 5px;
     color: white;
 }
