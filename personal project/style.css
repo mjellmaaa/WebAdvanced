@@ -129,3 +129,29 @@ nav ul li:hover{
     margin-left: 20px;
     margin-right: 20px;
 }
+
+footer{
+    background-color: #ffffff;
+}
+
+.footer-links{
+    max-width: 945px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer ul{
+    margin: 0;
+    display: flex;
+}
+
+.footer-links ul li{
+    display: inline-block;
+    padding: 10px 20px 10px 20px;
+}
+
+.footer-links ul li a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 24px;
+}
