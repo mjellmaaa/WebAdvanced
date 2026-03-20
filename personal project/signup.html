@@ -1,94 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CONTACT US</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SIGN UP</title>
+
+<style>
+body{
+    margin: 0;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url("images/signup-bg.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+/* CENTER */
+.signup{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+
+/* CARD */
+.signup-container{
+    background: rgba(245,245,245,0.92);
+    backdrop-filter: blur(12px);
+    padding: 45px;
+    border-radius: 18px;
+    width: 420px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+    text-align: center;
+    border: 1px solid rgba(0,0,0,0.08);
+}
+
+/* TITLE */
+.signup-container h2{
+    font-size: 34px;
+    margin-bottom: 6px;
+    color: #111;
+}
+
+.subtitle{
+    font-size: 12px;
+    letter-spacing: 3px;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+/* TEXT */
+.signup-container p{
+    font-size: 15px;
+    color: #555;
+    margin-bottom: 25px;
+    line-height: 1.5;
+}
+
+/* FORM */
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+input, textarea{
+    font-family: inherit;
+    font-size: 15px;
+    padding: 14px 16px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    outline: none;
+    background: #fff;
+    transition: 0.2s;
+}
+
+input:focus, textarea:focus{
+    border-color: #999;
+    box-shadow: 0 0 0 2px rgba(0,0,0,0.08);
+}
+
+/* BUTTON */
+input[type="submit"]{
+    background: #111;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 14px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+input[type="submit"]:hover{
+    background: #444;
+    transform: translateY(-2px);
+}
+
+/* FOOTER */
+.footer-text{
+    font-size: 12px;
+    color: #666;
+    margin-top: 14px;
+}
+</style>
+
 </head>
+
 <body>
-    <section id="section-3">
-        <div class="container">
-            <div class="title-box">
-                <h2 style="text-align: center; font-size: 40px;">GET IN TOUCH</h2>
-                <div class="line"></div>
-                <p style="text-align: center; font-size: 25px;">Create an account to discover the best
-                     beauty dupes, save your favorites, and stay updated on new affordable finds.</p>
-            </div>
-            <div id="contact-form">
-                <form>
-                    <div class="form-row">
-                        <input type="text" name="name" placeholder="your name">
-                        <input type="email" name="email" placeholder="your email">
-                    </div>
-                    <div class="form-row">
-                        <textarea name="message" placeholder="your message"></textarea>
-                    </div>
-                    <div class="form-row">
-                        <input type="submit" class="big-button" value="send message">
-                    </div>
-                </form>
-            </div>
+
+<section class="signup">
+    <div class="signup-container">
+
+        <h2>Create Account</h2>
+        <div class="subtitle">JOIN US</div>
+
+        <p>
+            Discover affordable beauty dupes and save your favorites in one place.
+        </p>
+
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <input type="password" placeholder="Password" required>
+            <textarea placeholder="Optional message"></textarea>
+            <input type="submit" value="Sign Up">
+        </form>
+
+        <div class="footer-text">
+            We respect your privacy. No spam ever.
         </div>
-    </section>
-    <style>
-        #section-3{
-            background-color: #646466;
-             min-height: 1000px ;
-            color: white;
-           font-family: "Trebuchet MS", Helvetica, sans-serif;
-           margin-top: auto;
-           padding-top: auto;
-        }
 
-        #contact-form{
-            max-width: 860px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .form-row{
-            display: flex;
-        }
-
-        input[type="text"], input[type="email"]{
-            width: 46%;
-            height: 56px;
-        }
-
-        input[type="text"], input[type="email"], textarea{
-            font-family:"Trebuchet MS", Helvetica, sans-serif;;
-            color: white;
-            background-color: #b6b6b6;
-            border: none;
-            font-size: 18px;
-            margin: 16px;
-            border-radius: 5px;
-            padding-left: 26px;
-        }
-
-        textarea{
-            height: 200px;
-            width: 100%;
-            padding-top: 24px;
-        }
-
-        input[type="submit"]{
-            background-color: #cccccc;
-            border: none;
-            font-size: 18px;
-            text-transform: uppercase;
-            margin-left: auto;
-            margin-right: auto;
-            border-radius: 5px;
-            margin-top: 60px;
-        }
-
-        .big-button{
-            padding: 25px 85px;
-            color: white;
-        }
-
-    </style>
+    </div>
+</section>
 
 </body>
 </html>

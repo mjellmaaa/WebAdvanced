@@ -4,62 +4,145 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ABOUT US</title>
-    <link rel="stylesheet" href="aboutus.css">
+
+    <style>
+    body{
+        margin: 0;
+        font-family: "Trebuchet MS", Helvetica, sans-serif;
+        background: #fff;
+        color: #111;
+    }
+
+  
+    .hero{
+        height: 300px;
+        background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url("images/aboutus.png");
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+    }
+
+    .hero h1{
+        font-size: 50px;
+        letter-spacing: 2px;
+    }
+
+  
+    .about-section{
+        padding: 80px 20px;
+        text-align: center;
+        background: #f2f2f2;
+    }
+
+    .about-box{
+        max-width: 700px;
+        margin: auto;
+        background: white;
+        padding: 40px;
+        border-radius: 15px;
+    }
+
+    .about-box p{
+        color: #555;
+        line-height: 1.6;
+    }
+
+
+    .features{
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        flex-wrap: wrap;
+    }
+
+    .feature{
+        width: 200px;
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    .feature h3{
+        margin-bottom: 10px;
+    }
+
+    .feature p{
+        font-size: 14px;
+        color: #666;
+    }
+
+
+    .extra-section{
+        margin-top: 60px;
+        text-align: center;
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .extra-section h2{
+        font-size: 28px;
+        margin-bottom: 10px;
+    }
+
+    .extra-section p{
+        color: #555;
+        line-height: 1.6;
+    }
+    </style>
+
 </head>
+
 <body>
-    <section>
-        <div class="about">
-    <h1 style="text-align: center;
-                font-family: Trebuchet MS, Helvetica, sans-serif;">ABOUT US</h1>
-    <p style="text-align: center;
-                font-family: Trebuchet MS, Helvetica, sans-serif; 
-                font-size: 20px;">We help beauty lovers find affordable dupes for their favorite high-end
-        Sephora products. Our goal is to make great makeup and skincare more accessible by sharing
-        products that deliver a similar look, feel, and quality—without the high price.
-        <hr><br>
-        <hr><br>
-        <p style="text-align: center; font-family: Trebuchet MS, Helvetica, sans-serif; font-size: 20px;">Why use our site? <br>
-            Discover affordable beauty dupes
-            Save money on your favorite looks
-            Explore new makeup and skincare</p>
-            </div>
-        </section>
-        <style>
-        body {
-            font-family: Trebuchet MS, Helvetica, sans-serif;
-            background-image:  linear-gradient(to bottom, rgba(179, 179, 179, 0.8), rgba(179, 179, 179, 0.7)), url(images/aboutus.png);
-        }
-   
-        .about {
-             padding: 60px 20px;
-             text-align: center;
-            background: url(about.png);
-            }
 
-        .about-container {
-            max-width: 700px;
-            margin: auto;
-            background: white;
-            padding: 40px;
-            border-radius: 50px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-            text-align: center;
-        }
 
-        .about h2 {
-            font-size: 32px;
-            margin-bottom: 20px;
-            color: #fffefe;
-            }
+<section class="hero">
+    <h1>ABOUT US</h1>
+</section>
 
-        .about p {
-            color: #ffffff;
-            line-height: 1.6;
-            margin-bottom: 15px;
-            line-height: 1.5;
-            }
-        </style>
-       
-</p>
+<section class="about-section">
+
+    <div class="about-box">
+        <p>
+            We help beauty lovers find affordable dupes for their favorite high-end
+            Sephora products. Our goal is to make beauty accessible to everyone,
+            so you can achieve the same look and confidence without spending too much.
+        </p>
+    </div>
+
+
+    <div class="features">
+
+        <div class="feature">
+            <h3>Affordable</h3>
+            <p>Save money with high-quality dupes.</p>
+        </div>
+
+        <div class="feature">
+            <h3>Trusted Picks</h3>
+            <p>We choose products that actually work.</p>
+        </div>
+
+        <div class="feature">
+            <h3>Easy to Find</h3>
+            <p>Quickly discover your perfect match.</p>
+        </div>
+
+    </div>
+
+        <div class="extra-section">
+        <h2>Why Choose Us</h2>
+        <p>
+            We focus on real results, not hype. Every dupe we suggest is based on quality, price, and honest reviews.
+        </p>
+    </div>
+
+</section>
+
 </body>
 </html>
